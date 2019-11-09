@@ -1,0 +1,35 @@
+Hey guys!
+
+I have a task on Python3 and would like to get your help 
+
+The task is the following:
+
+A man has a rather strange family structure. 
+Every man in his family first has a boy and then a daughter. 
+Every woman, on the contrary, firs has a girl and then a boy. 
+The man wants predict the sex of K child in N generation. 
+Write the code. 
+The code should work effectively with: 
+1 <= K <= min(10^15, 2^(n-1)) and 1 <= N <= 10000
+
+I do have several lines of code, but I don't know how to comlete it.
+I would appreciate your help 
+
+#Asking to enter desired number of child in desired generation
+child_number = input("Please, enter desired number of child:")
+generation = input("Please, enter desired generation")
+#Checking whether the input of desired number of child and desired generation is numeric
+try :
+    child_number = int(child_number)
+    generation = int(generation)
+except :
+    print("Error, please enter numeric input")
+    quit()
+if 1 <= child_number <= min(10**15, 2**(generation - 1)) :
+    #There should be the body of the code
+else :
+    print("Please, enter the diffent number of the child")
+if 1 <= generation <= 10000 :
+    #There should be the body of code
+else :
+    print("Please, enter the generation number between 1 and 10 000")
